@@ -59,27 +59,11 @@ Conducted to explore the relationships between engagement metrics (daily logins 
 #### **7. Logistic Regression:** 
 Used to predict the likelihood of subscription based on engagement metrics.
 
-### Analysis Tools
-R was used to clean, expore, and analyze data with dplyr, tidyr, ggplot2, car, ad pROC packages. Tableau was used to create visualizations presented in this README.
+### Tools
+R was used to clean, expore, and analyze data with dplyr, tidyr, ggplot2, car, ad pROC packages.
 
 ## Executive Summary
-
-### Key Findings:
-
-#### 1. **Geographical Differences**: 
-Engagement metrics, like daily logins, differ slightly across the USA, France, and Germany. The USA leads in subscription rates despite lower engagement compared to European markets. However, these differences have small effect sizes.
-
-#### 2. **Age-Related Differences**: 
-Younger users (18-29) are highly engaged but have lower subscription rates compared to older groups. The 50-64 age group shows the highest likelihood of subscribing.
-
-#### 3. **Age Variations Across Countries**: 
-Engagement differences by age group vary across countries, particularly among middle-aged users. Country-specific strategies may be most effective for the 30-49 segment.
-
-#### 4. **Subscriber vs. Non-Subscriber Behavior**: 
-Subscribers show higher engagement through daily logins compared to non-subscribers. Daily logins are a stronger predictor of subscription than practice hours.
-
-### Overview of Findings
-Analysis of LinguaRisa's user data across 2,000 users reveals distinct patterns in engagement and subscription behavior that suggest opportunities for targeted growth strategies. The data shows that while geographical differences in user behavior exist, they are relatively minor, with Germany showing the highest daily logins but paradoxically the lowest subscription rate (13.8%). Age emerges as a more significant factor, explaining 16.7% of variation in practice time, with younger users (18-29) showing the highest engagement but lowest subscription rates (13.7%). Conversely, the 50-64 age group demonstrates the highest subscription propensity (23.8%) despite moderate engagement levels. The analysis reveals that daily login frequency is a stronger predictor of subscription likelihood than practice duration (AUC 0.582 vs 0.531), with each additional daily login increasing subscription odds by 39.1%. These findings suggest that while LinguaRisa successfully engages younger users, there's significant opportunity to improve conversion rates among this demographic, particularly in European markets. The data also indicates that fostering daily engagement habits may be more effective for driving subscriptions than focusing on practice duration.
+Analysis of 2,000 LinguaRisa users reveals that geographic location minimally impacts engagement patterns, though subscription rates vary notably (USA: 21.7%, France: 17.9%, Germany: 13.8%). The most striking insights come from age-related patterns and engagement behaviors: while younger users (18-29) show highest engagement levels, they maintain the lowest subscription rates (13.7%), contrasting with the 50-64 age group's leading subscription rate (23.8%). Remarkably consistent age distribution across countries suggests that market differences stem from factors beyond demographics. The analysis highlights that daily login frequency, not practice duration, most strongly predicts subscription likelihood (39.1% increase per additional daily login). These findings suggest that LinguaRisa should prioritize features encouraging daily engagement rather than longer practice sessions, focus on converting highly-engaged younger users (especially in European markets), and maintain largely consistent strategies across countries except for the 30-49 age group, which shows significant market-specific variations.
 
 ## Insights Deep Dive
 ### **1.	How do engagement patterns vary across different geographical markets?:**  
