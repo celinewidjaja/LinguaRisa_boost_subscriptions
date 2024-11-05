@@ -93,7 +93,7 @@ View the full interactive dashboard [here](https://public.tableau.com/views/Ling
 ### **3.	How does engagement patterns differ between age groups across countries?:** 
 The age makeup of our user base is remarkably similar across all three countries. This consistent age distribution means that any differences we see in country performance aren't due to having different age groups dominating different markets. Teenagers (Under 18), older adults (50-64), and seniors (65+) demonstrate very consistent patterns regardless of country. Middle-Aged Users(30-49) are the only group of users showing meaningful differences in subscription behavior across countries. 
 
-![ ](./country_and_view.png)
+![ ](./country_and_age_view.png)
 
 View the full interactive dashboard [here](https://public.tableau.com/views/LinguaRisaEngagementtoConversion/SubscriptionDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
