@@ -60,7 +60,7 @@ Conducted to explore the relationships between engagement metrics (daily logins 
 Used to predict the likelihood of subscription based on engagement metrics.
 
 ### Tools
-R was used to clean, expore, and analyze data with dplyr, tidyr, ggplot2, car, ad pROC packages.
+R was used to clean, explore, and analyze data with dplyr, tidyr, ggplot2, car, ad pROC packages. Tableau was used to visualize data.
 
 ## Executive Summary
 Analysis of 2,000 LinguaRisa users reveals that geographic location minimally impacts engagement patterns, though subscription rates vary notably (USA: 21.7%, France: 17.9%, Germany: 13.8%). The most striking insights come from age-related patterns and engagement behaviors: while younger users (18-29) show highest engagement levels, they maintain the lowest subscription rates (13.7%), contrasting with the 50-64 age group's leading subscription rate (23.8%). Remarkably consistent age distribution across countries suggests that market differences stem from factors beyond demographics. The analysis highlights that daily login frequency, not practice duration, most strongly predicts subscription likelihood (39.1% increase per additional daily login). These findings suggest that LinguaRisa should prioritize features encouraging daily engagement rather than longer practice sessions, focus on converting highly-engaged younger users (especially in European markets), and maintain largely consistent strategies across countries except for the 30-49 age group, which shows significant market-specific variations.
@@ -77,26 +77,32 @@ Looking at the differences between subscribers and non-subscribers in each count
 - French subscribers log in somewhat more often (+0.27 times per day) but barely practice more (+0.04 hours per week). 
 - US subscribers show moderate increases in both metrics (+0.31 logins, +0.07 hours). 
 
+![ ](/Users/celinewidjaja/Desktop/LinguaRisa_boost_subscriptions/Country view.png)
+
+View the full interactive dashboard [here](https://public.tableau.com/views/LinguaRisaEngagementtoConversion/SubscriptionDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+
 ### **2.	What are the key age-related differences in app usage and subscription?:**  
 Young adults (18-29) are our most frequent users, with their usage notably different from both middle-aged users and seniors. The biggest difference in daily app usage is between young adults and seniors (65+), showing that these age groups have very different patterns of engaging with LinguaRisa. However, these differences in daily logins are relatively modest, ranging from about 3.6 logins per day for younger users to 3.2 for seniors.
 
 Practice time shows much stronger age-related patterns, gradually decreasing with age. Young adults (18-29) practice the most, averaging 4.6 hours per week. Seniors (65+) practice the least, averaging 3.2 hours per week. This decline in practice time becomes more pronounced as age increases. What's interesting is that despite practicing less, older users are more likely to subscribe. The 50-64 age group leads with a 23.8% subscription rate. Young adults (18-29), our most active users, have the lowest subscription rate at 13.7%. Middle-aged users (30-49) maintain a healthy 21.1% subscription rate. Seniors (65+) keep a moderate 18.8% subscription rate.
 
+![ ](/Users/celinewidjaja/Desktop/LinguaRisa_boost_subscriptions/Age view.png)
+
+View the full interactive dashboard [here](https://public.tableau.com/views/LinguaRisaEngagementtoConversion/SubscriptionDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+
 ### **3.	How does engagement patterns differ between age groups across countries?:** 
-The age makeup of our user base is remarkably similar across all three countries. 
+The age makeup of our user base is remarkably similar across all three countries. This consistent age distribution means that any differences we see in country performance aren't due to having different age groups dominating different markets. Teenagers (Under 18), older adults (50-64), and seniors (65+) demonstrate very consistent patterns regardless of country. Middle-Aged Users(30-49) are the only group of users showing meaningful differences in subscription behavior across countries. 
 
-- **Young adults (18-29)**: USA 27.0%, France 28.1%, Germany 28.2%. 
-- **Middle-aged users (30-49)**: USA 32.2%, France 28.4%, Germany 32.4%. 
-- **Teenagers (Under 18)**: USA 17.6%, France 17.3%, Germany 17.1%  
-- **Older adults (50-64)**: USA 13.8%, France 16.2%, Germany 12.8%  
-- **Seniors (65+)**: USA 9.4%, France 9.9%, Germany 9.5%  
+![ ](/Users/celinewidjaja/Desktop/LinguaRisa_boost_subscriptions/Country and age view.png)
 
-This consistent age distribution means that any differences we see in country performance aren't due to having different age groups dominating different markets.
-
-Teenagers (Under 18), older adults (50-64), and seniors (65+) demonstrate very consistent patterns regardless of country. Middle-Aged Users(30-49) are the only group of users showing meaningful differences in subscription behavior across countries. 
+View the full interactive dashboard [here](https://public.tableau.com/views/LinguaRisaEngagementtoConversion/SubscriptionDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ### **4.	How do usage intensity metrics correlate with subscription status?:**  
 The difference between subscribers and non-subscribers is most evident in how often they use the app. Subscribers log in more frequently: 3.74 times per day, while non-subscribers log in less often: 3.44 times per day. This pattern is consistent and reliable across all user groups. Overall, subscribers show more consistent usage patterns. When it comes to how long users spend practicing, there isn't a big difference between subscribers (4.39 hours per week) and non-subscribers (4.28 hours per week). Our analysis reveals a surprising insight: how often someone uses the app is more important than how long they spend using it. Each additional daily login increases subscription likelihood by 39.1%. When we look at both metrics together, only login frequency remains significant. The predictive power of daily logins (58.2% accuracy) is notably stronger than practice time (53.1% accuracy). Even combining both metrics only achieves 58.4% prediction accuracy.
+
+![ ](/Users/celinewidjaja/Desktop/LinguaRisa_boost_subscriptions/Subscription view.png)
+
+View the full interactive dashboard [here](https://public.tableau.com/views/LinguaRisaEngagementtoConversion/SubscriptionDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
 
 ## Recommendations
 1. **Avoid country-specific strategies**: Successful subscription strategies should focus more on understanding and responding to individual user behaviors and preferences rather than creating broad country-specific approaches. A particularly interesting topic for further investigation is why highly engaged users from Germany and France are not converting to paid subscriptions at the same rate as their American counterparts.
